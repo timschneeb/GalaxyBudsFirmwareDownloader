@@ -70,40 +70,40 @@ def entrypoint():
         print("Server error: No firmware found")
         exit(1)
 
-    #try:
-    xml_data = xmltodict.parse(resp.content)
-    root = xml_data["FirmwareInfo"]
-    fw_version = root["FWVersion"]
-    fw_url = root["DownloadURL"]
+    try:
+        xml_data = xmltodict.parse(resp.content)
+        root = xml_data["FirmwareInfo"]
+        fw_version = root["FWVersion"]
+        fw_url = root["DownloadURL"]
 
-    raw_changelog = root["Description"].partition("<ENG>")[2].partition("</ENG>")[0]
-    if "<ENG>" in raw_changelog or raw_changelog == "":
-        changelog = str(root["Description"]).replace("<![CDATA[", "").replace("]]>", "")
-    else:
-        changelog = raw_changelog.lstrip()
+        raw_changelog = root["Description"].partition("<ENG>")[2].partition("</ENG>")[0]
+        if "<ENG>" in raw_changelog or raw_changelog == "":
+            changelog = str(root["Description"]).replace("<![CDATA[", "").replace("]]>", "")
+        else:
+            changelog = raw_changelog.lstrip()
 
-    print("Found firmware: {}".format(fw_version))
-    print("Changelog:\n{}".format(changelog))
+        print("Found firmware: {}".format(fw_version))
+        print("Changelog:\n{}".format(changelog))
 
-    raw_filename = re.search('&file=(.*).bin', fw_url)
-    if raw_filename is None:
-        filename = fw_version
-    else:
-        filename = raw_filename.group(1)
+        raw_filename = re.search('&file=(.*).bin', fw_url)
+        if raw_filename is None:
+            filename = fw_version
+        else:
+            filename = raw_filename.group(1)
 
-    if args.type != "retail":
-        filename += "_" + str(args.type).upper()
-    filename += ".bin"
+        if args.type != "retail":
+            filename += "_" + str(args.type).upper()
+        filename += ".bin"
 
-    raw_fw = requests.get(fw_url)
-    with open(filename, 'wb') as f:
-        f.write(raw_fw.content)
+        raw_fw = requests.get(fw_url)
+        with open(filename, 'wb') as f:
+            f.write(raw_fw.content)
 
-    print("Firmware image written to '{}'".format(filename))
-    #except:
-    #    print("Failed to parse XML data. Dumping server response:")
-    #    print(resp.content)
-    #    exit(1)
+        print("Firmware image written to '{}'".format(filename))
+    except:
+        print("Failed to parse XML data. Dumping server response:")
+        print(resp.content)
+        exit(1)
 
 
 if __name__ == '__main__':
