@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirmwareInfo>
+<FWVersion>R140XXUASC1</FWVersion>
+<DownloadURL><![CDATA[https://wsu-dms.samsungdm.com/file/download?XmlIdx=52&file=ALL_R140XXUASC1.bin]]></DownloadURL>
+<Description><![CDATA[<ENG>
+• Bluetooth compatibility improved for Android smartphones (P OS).
+</ENG>
+<CHN>
+• 改进了 Android 智能手机 (P OS) 的蓝牙兼容性。
+</CHN>
+<DEU>
+• Bluetooth-Kompatibilität für Android-Smartphones (P OS) wurde verbessert.
+</DEU>
+<ESP>
+• Se ha mejorado la compatibilidad de Bluetooth para los smartphones Android (sistema operativo Pie).
+</ESP>
+<ESP_LAT>
+• Se mejoró la compatibilidad de Bluetooth en los smartphones Android (sistema operativo P).
+</ESP_LAT>
+<FRA>
+• Amélioration de la compatibilité avec le Bluetooth pour les smartphones Android (système d'exploitation P).
+</FRA>
+<ITA>
+• Miglioramento della compatibilità del Bluetooth per smartphone Android (sistema operativo P).
+</ITA>
+<JPN>
+• Androidのスマートフォン（P OS）向けにBluetoothの互換性を改善しました。
+</JPN>
+<NLD>
+• Verbeterde Bluetooth-compatibiliteit voor Android-smartphones (P OS).
+</NLD>
+<PRT>
+• Compatibilidade Bluetooth melhorada para smartphones Android (SO P).
+</PRT>
+<RUS>
+• Улучшена совместимость Bluetooth для смартфонов с ОС Android P.
+</RUS>
+<TWN>
+• 改善 Android 智慧型手機 (P OS) 藍牙相容性。
+</TWN>
+<VNM>
+• Khả năng tương thích Bluetooth đã được cải thiện cho điện thoại thông minh Android (P OS).
+</VNM>]]></Description>
+<DescriptionKor><![CDATA[• 안드로이드 스마트 폰(P OS)과의 블루투스 호환성 개선]]></DescriptionKor>
+</FirmwareInfo>

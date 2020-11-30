@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FirmwareInfo>
+<FWVersion>R170XXU0ATF2</FWVersion>
+<DownloadURL><![CDATA[https://wsu-dms.samsungdm.com/file/download?XmlIdx=56&file=FOTA_R170XXU0ATF2.bin]]></DownloadURL>
+<Description><![CDATA[<ENG>
+• Implemented stability code for device security
+</ENG>
+<CHN>
+• 实施稳定性代码，以保障设备安全性
+</CHN>
+<DEU>
+• Implementierter Stabilitätscode für Gerätesicherheit
+</DEU>
+<ESP>
+• Se ha aplicado el código de estabilidad para mejorar la seguridad del dispositivo
+</ESP>
+<ESP_LAT>
+• Se ha aplicado el código de estabilidad para mejorar la seguridad del dispositivo
+</ESP_LAT>
+<FRA>
+• Implémentation d'un code de stabilité pour la sécurité de l'appareil
+</FRA>
+<ITA>
+• Implementato il codice di stabilità per la sicurezza del dispositivo
+</ITA>
+<JPN>
+• デバイスのセキュリティに対する安定性コードを実装
+</JPN>
+<NLD>
+• Stabiliteitscode geïmplementeerd voor apparaatbeveiliging
+</NLD>
+<PRT>
+• Implementado código de estabilidade para segurança dos dispositivos
+</PRT>
+<RUS>
+• Для повышения безопасности устройства добавлен код стабильности
+</RUS>
+<TWN>
+• 針對裝置安全性執行穩定代碼
+</TWN>
+<VNM>
+• Áp dụng mã ổn định để bảo mật thiết bị
+</VNM>]]></Description>
+<DescriptionKor><![CDATA[• 단말 보안 관련 안정화 코드 적용]]></DescriptionKor>
+</FirmwareInfo>
